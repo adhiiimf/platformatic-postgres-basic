@@ -1,0 +1,17 @@
+{
+  "$schema": "./platformatic.db.schema.json",
+  "server": {
+    "hostname": "{PLT_SERVER_HOSTNAME}",
+    "port": "{PORT}",
+    "logger": {
+      "level": "{PLT_SERVER_LOGGER_LEVEL}"
+    }
+  },
+  "core": {
+    "connectionString": "postgres://username:pass@localhost:port/dbname",
+    "openapi": true
+  },
+  "migrations": {
+    "dir": "migrations"
+  }
+}
